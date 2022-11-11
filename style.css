@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #c7ecee;
+    position: relative;
+}
+.card{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    overflow: hidden; 
+}
+.card .card-header{
+    background: #1B9CFC;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    font-weight: bold;
+}
+.card .card-body{
+    padding: 25px 30px;
+    background: #58B19F;
+}
+.card .card-body form{
+    width: 100%;
+    text-align: center;
+}
+.card .card-body form input{
+    width: 49%;
+    padding: 10px 8px;
+    margin: 8px 0;
+    display: inline-block;
+}
+.card .card-body form .form-control{
+    width: 100%;
+    display: inline-block;
+}
+.card .card-body form input[type="submit"]{
+    background: #57606f;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.card .card-body p{
+    margin: 10px 0;
+    text-align: left;
+}
+.card .card-body p a{
+    color: #3742fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+.card .card-body p a:hover{
+    text-decoration: underline;
+    color: #c23616;
+    font-style: italic;
+}
+h3{
+    text-align: center;
+    display: none;
+}
+@media screen and (max-width:992px){
+    .card{
+        width: 70%;
+    }
+}
+@media screen and (max-width:768px){
+     .card{
+        width: 65%;
+    }
+}
+@media screen and (max-width:576px){
+    .card{
+        width: 80%;
+    }
+}
+@media screen and (max-width:480px){
+    .card{
+        width: 95%;
+    }
+}
+@media screen and (max-width:319px){
+    .card{
+        display: none;
+    }
+    h3{
+        display: block;
+        margin: 99px 0;
+        padding: 20px 0;
+        color: #ffffff;
+        font-weight: bold;
+        background: #2f3542;
+    }
+}
